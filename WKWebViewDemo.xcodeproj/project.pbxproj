@@ -15,6 +15,8 @@
 		979F80D3207AFCE5002C61C2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 979F80D2207AFCE5002C61C2 /* main.m */; };
 		979F80DD207AFCE5002C61C2 /* WKWebViewDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 979F80DC207AFCE5002C61C2 /* WKWebViewDemoTests.m */; };
 		979F80E8207AFCE5002C61C2 /* WKWebViewDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 979F80E7207AFCE5002C61C2 /* WKWebViewDemoUITests.m */; };
+		979F80F7207AFD0C002C61C2 /* WKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 979F80F6207AFD0C002C61C2 /* WKWebViewController.m */; };
+		979F85EF207CB07200FE8D39 /* NSString+URL.m in Sources */ = {isa = PBXBuildFile; fileRef = 979F85EE207CB07200FE8D39 /* NSString+URL.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		979F80E3207AFCE5002C61C2 /* WKWebViewDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WKWebViewDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		979F80E7207AFCE5002C61C2 /* WKWebViewDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WKWebViewDemoUITests.m; sourceTree = "<group>"; };
 		979F80E9207AFCE5002C61C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		979F80F5207AFD0C002C61C2 /* WKWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WKWebViewController.h; sourceTree = "<group>"; };
+		979F80F6207AFD0C002C61C2 /* WKWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WKWebViewController.m; sourceTree = "<group>"; };
+		979F85ED207CB07200FE8D39 /* NSString+URL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+URL.h"; sourceTree = "<group>"; };
+		979F85EE207CB07200FE8D39 /* NSString+URL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+URL.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +111,10 @@
 				979F80C4207AFCE5002C61C2 /* AppDelegate.m */,
 				979F80C6207AFCE5002C61C2 /* ViewController.h */,
 				979F80C7207AFCE5002C61C2 /* ViewController.m */,
+				979F80F5207AFD0C002C61C2 /* WKWebViewController.h */,
+				979F80F6207AFD0C002C61C2 /* WKWebViewController.m */,
+				979F85ED207CB07200FE8D39 /* NSString+URL.h */,
+				979F85EE207CB07200FE8D39 /* NSString+URL.m */,
 				979F80C9207AFCE5002C61C2 /* Main.storyboard */,
 				979F80CC207AFCE5002C61C2 /* Assets.xcassets */,
 				979F80CE207AFCE5002C61C2 /* LaunchScreen.storyboard */,
@@ -267,7 +277,9 @@
 			files = (
 				979F80C8207AFCE5002C61C2 /* ViewController.m in Sources */,
 				979F80D3207AFCE5002C61C2 /* main.m in Sources */,
+				979F85EF207CB07200FE8D39 /* NSString+URL.m in Sources */,
 				979F80C5207AFCE5002C61C2 /* AppDelegate.m in Sources */,
+				979F80F7207AFD0C002C61C2 /* WKWebViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

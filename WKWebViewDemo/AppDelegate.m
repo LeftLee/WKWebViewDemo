@@ -7,8 +7,12 @@
 //
 
 #import "AppDelegate.h"
+#import "WKWebViewController.h"
+#import <WebKit/WebKit.h>
 
 @interface AppDelegate ()
+
+@property (nonatomic,strong)WKWebView *webView;
 
 @end
 
@@ -16,8 +20,42 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
+    
+    WKWebViewController *webVC = [[WKWebViewController alloc]init];
+    NSString *url = @"https://www.baidu.com";
+    webVC.url = url;
+    
+    UINavigationController *navVC = [[UINavigationController alloc]initWithRootViewController:webVC];
+    self.window.rootViewController = navVC;
+    
+    [self setUserAgent];
+    
     return YES;
+}
+
+- (void)setUserAgent {
+    
+    _webView = [[WKWebView alloc] initWithFrame:CGRectZero];
+    
+    [_webView evaluateJavaScript:@"navigator.userAgent" completionHandler:^(id result, NSError *error) {
+        if (error) { return; }
+        NSString *userAgent = result;
+        
+        if (![userAgent containsString:@"/mobile-iOS"]) {
+            
+            userAgent = [userAgent stringByAppendingString:@"/mobile-iOS"];
+            NSDictionary *dict = @{@"UserAgent": userAgent};
+            NSUserDefaults *user = [NSUserDefaults standardUserDefaults];
+            [user setObject:dict forKey:@"UserAgent"];
+            
+        }
+        
+    }];
+    
 }
 
 
