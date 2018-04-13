@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML中用JS调用OC方法</title>
+        <style>
+        
+        #div1 {
+            background-color:#ccc;
+            width:100px;
+            height:100px;
+            position:absolute;
+            top:400px
+        }
+        
+        
+        </style>
+        
+    </head>
+    <body>
+        
+        <p id="div1">
+            <img id="img1" src="" height="200" width="200" />
+        </p>
+        <h1 id="header">Old Header</h1>
+        
+        <script>
+            
+            function getImg(urls) {
+                //alert(urls)
+                
+                var oImg = document.getElementById("img1");
+                oImg.src = urls;
+                
+                alert(oImg.src)
+                
+            }
+        window.getImg = getImg
+        
+        
+        function select(strs) {
+            alert(strs);
+            var element=document.getElementById("header");
+            element.innerHTML=strs;
+        }
+        
+        
+        </script>
+        <br/>
+        
+        <div  id="getImg" width=200 height=30>打开相册</div><br><br/>
+        <div  id="selectImg" width=200 height=30>select选择照片</div>
+
+        
+        
+   <script>
+        document.getElementById('getImg').onclick=function(){
+        window.webkit.messageHandlers.takePicturesByNative.postMessage({
+                    "picType": "0",
+                    "picCount":"9",
+                    "callBackName": "getImg22"
+                })
+        }
+   document.getElementById('selectImg').onclick=function(){
+       window.webkit.messageHandlers.selectPictures.postMessage({
+                                                                "picType": "111",
+                                                                "picCount":"222",
+                                                                "callBackName": "selectImg"
+                                                                      })
+   }
+   </script>
+
+    </body>
+    
+</html>

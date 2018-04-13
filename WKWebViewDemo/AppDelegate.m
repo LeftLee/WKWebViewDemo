@@ -26,8 +26,8 @@
     [self.window makeKeyAndVisible];
     
     WKWebViewController *webVC = [[WKWebViewController alloc]init];
-    NSString *url = @"https://www.baidu.com";
-    webVC.url = url;
+//    NSString *url = @"https://www.baidu.com";
+//    webVC.url = url;
     
     UINavigationController *navVC = [[UINavigationController alloc]initWithRootViewController:webVC];
     self.window.rootViewController = navVC;

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		978F21FF207F3A600053218C /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = 978F21FE207F3A5F0053218C /* test.html */; };
+		978F2202207F3F3C0053218C /* MyCustomURLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 978F2201207F3F3C0053218C /* MyCustomURLProtocol.m */; };
 		979F80C5207AFCE5002C61C2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 979F80C4207AFCE5002C61C2 /* AppDelegate.m */; };
 		979F80C8207AFCE5002C61C2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 979F80C7207AFCE5002C61C2 /* ViewController.m */; };
 		979F80CB207AFCE5002C61C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 979F80C9207AFCE5002C61C2 /* Main.storyboard */; };
@@ -37,6 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		978F21FE207F3A5F0053218C /* test.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = test.html; sourceTree = "<group>"; };
+		978F2200207F3F3B0053218C /* MyCustomURLProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCustomURLProtocol.h; sourceTree = "<group>"; };
+		978F2201207F3F3C0053218C /* MyCustomURLProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCustomURLProtocol.m; sourceTree = "<group>"; };
 		979F80C0207AFCE5002C61C2 /* WKWebViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WKWebViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		979F80C3207AFCE5002C61C2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		979F80C4207AFCE5002C61C2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -107,12 +112,15 @@
 		979F80C2207AFCE5002C61C2 /* WKWebViewDemo */ = {
 			isa = PBXGroup;
 			children = (
+				978F21FE207F3A5F0053218C /* test.html */,
 				979F80C3207AFCE5002C61C2 /* AppDelegate.h */,
 				979F80C4207AFCE5002C61C2 /* AppDelegate.m */,
 				979F80C6207AFCE5002C61C2 /* ViewController.h */,
 				979F80C7207AFCE5002C61C2 /* ViewController.m */,
 				979F80F5207AFD0C002C61C2 /* WKWebViewController.h */,
 				979F80F6207AFD0C002C61C2 /* WKWebViewController.m */,
+				978F2200207F3F3B0053218C /* MyCustomURLProtocol.h */,
+				978F2201207F3F3C0053218C /* MyCustomURLProtocol.m */,
 				979F85ED207CB07200FE8D39 /* NSString+URL.h */,
 				979F85EE207CB07200FE8D39 /* NSString+URL.m */,
 				979F80C9207AFCE5002C61C2 /* Main.storyboard */,
@@ -248,6 +256,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				978F21FF207F3A600053218C /* test.html in Resources */,
 				979F80D0207AFCE5002C61C2 /* LaunchScreen.storyboard in Resources */,
 				979F80CD207AFCE5002C61C2 /* Assets.xcassets in Resources */,
 				979F80CB207AFCE5002C61C2 /* Main.storyboard in Resources */,
@@ -277,6 +286,7 @@
 			files = (
 				979F80C8207AFCE5002C61C2 /* ViewController.m in Sources */,
 				979F80D3207AFCE5002C61C2 /* main.m in Sources */,
+				978F2202207F3F3C0053218C /* MyCustomURLProtocol.m in Sources */,
 				979F85EF207CB07200FE8D39 /* NSString+URL.m in Sources */,
 				979F80C5207AFCE5002C61C2 /* AppDelegate.m in Sources */,
 				979F80F7207AFD0C002C61C2 /* WKWebViewController.m in Sources */,
